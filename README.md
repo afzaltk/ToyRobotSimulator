@@ -58,7 +58,7 @@ Output: 3,2,NORTH
 
 SETUP
 
-Because C# is a compiled language you will need to load this repo in Visual Studio and build it. This application was developed Visual Studion 2022 Community Edition using .Net Core 6.
+Because C# is a compiled language you will need to load this repo in Visual Studio and build it. This application was developed Visual Studio 2022 Community Edition using .Net Core 6.
 
 Clone this repo:
 
