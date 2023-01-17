@@ -70,7 +70,7 @@ To Use:
 
 Modify the commands.txt file found in the location ToyRobotSimulator/ToyRobotSimulator/.\
 Add all the required commands in this file.\
-Run an instance of the Project - ToyRobotSimulator \
+Run an instance of the Project - ToyRobotSimulator in the Debug mode\
 This will show a command window with the expected result.
 
 ------------------------------------------------------------------------
