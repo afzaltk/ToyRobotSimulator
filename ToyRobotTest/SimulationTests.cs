@@ -31,17 +31,17 @@ namespace ToyRobotTest
             switch (direction)
             {
                 case "east":
-                    movedDirectionLength = Robot.East;
+                    movedDirectionLength = Robot.EastPosition;
                     break;
                 case "west":
-                    movedDirectionLength = Robot.East;
+                    movedDirectionLength = Robot.EastPosition;
                     times = -times;
                     break;
                 case "north":
-                    movedDirectionLength = Robot.North;
+                    movedDirectionLength = Robot.NorthPosition;
                     break;
                 case "south":
-                    movedDirectionLength = Robot.North;
+                    movedDirectionLength = Robot.NorthPosition;
                     times = -times;
                     break;
             }

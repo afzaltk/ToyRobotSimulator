@@ -17,8 +17,8 @@
                 Robot = new ToyRobot
                 {
                     Direction = direction.ToLower(),
-                    East = east,
-                    North = north
+                    EastPosition = east,
+                    NorthPosition = north
                 };
             }
         }
@@ -28,7 +28,7 @@
             switch (movement)
             {
                 case "move":
-                    if (CurrentSurface.IsLocationValid(Robot.East + 1, Robot.North + 1))
+                    if (CurrentSurface.IsLocationValid(Robot.EastPosition + 1, Robot.NorthPosition + 1))
                     {
                         Robot.Move();
                     }

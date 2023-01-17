@@ -3,23 +3,23 @@
     public class ToyRobot
     {
         public string? Direction { get; set; }
-        public int East { get; set; }
-        public int North { get; set; }
+        public int EastPosition { get; set; }
+        public int NorthPosition { get; set; }
         public void Move()
         {
             switch (Direction)
             {
                 case "east":
-                    East += 1;
+                    EastPosition += 1;
                     break;
                 case "west":
-                    East -= 1;
+                    EastPosition -= 1;
                     break;
                 case "north":
-                    North += 1;
+                    NorthPosition += 1;
                     break;
                 case "south":
-                    North -= 1;
+                    NorthPosition -= 1;
                     break;
             }
         }
@@ -64,7 +64,7 @@
 
         public string ShowReport()
         {
-            return East + "," + North + "," + Direction?.ToUpper();
+            return EastPosition + "," + NorthPosition + "," + Direction?.ToUpper();
         }
     }
 }
