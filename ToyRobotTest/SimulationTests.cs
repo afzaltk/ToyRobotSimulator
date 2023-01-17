@@ -17,6 +17,7 @@ namespace ToyRobotTest
         [InlineData(0, "east")]
         [InlineData(0, "west")]
         [InlineData(0, "north")]
+        //Tests if the movements are correctly made on the right direction and the right amount
         public void MovementsToAllDirections(int times, string direction)
         {
             int movements = 0;
@@ -58,6 +59,7 @@ namespace ToyRobotTest
         [InlineData("south", "RIGHT", "west")]
         [InlineData("west", "LEFT", "south")]
         [InlineData("west", "RIGHT", "north")]
+        //Tests if the robot turns to the correct direction from a given current direction based on the turn it does
         public void TurningInAlldirections(string facingDirection, string turnToDirection, string expectedDirection)
         {
             ToyRobot Robot = new() { Direction = facingDirection.ToLower() };
@@ -81,6 +83,7 @@ namespace ToyRobotTest
         [InlineData(-1, 0, 6, 6, false)]
         [InlineData(3, 7, 6, 6, false)]
         [InlineData(6, 6, 6, 6, true)]
+        //checks if the location where the robot has to be placed is on the table surface
         public void ValidLocationsToPlaceRobotOnATabletTop(int positionX, int positionY, int tableWidth, int tableLength, bool expectedOutput)
         {
             TableTop table = new(tableWidth, tableLength);

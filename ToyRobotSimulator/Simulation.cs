@@ -28,6 +28,7 @@
             switch (movement)
             {
                 case "move":
+                    //Checks if new location will be on the table before moving it
                     if (CurrentSurface.IsLocationValid(Robot.EastPosition + 1, Robot.NorthPosition + 1))
                     {
                         Robot.Move();
@@ -42,9 +43,9 @@
             }
         }
 
-        public string ShowReport()
+        public string GetOutput()
         {
-            return Robot.ShowReport();
+            return Robot.GetOutput();
         }
     }
 }

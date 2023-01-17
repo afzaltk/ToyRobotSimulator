@@ -62,7 +62,8 @@
             }
         }
 
-        public string ShowReport()
+        //The format of the output to be displayed
+        public string GetOutput()
         {
             return EastPosition + "," + NorthPosition + "," + Direction?.ToUpper();
         }
