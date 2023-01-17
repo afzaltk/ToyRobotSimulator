@@ -20,20 +20,20 @@ REPORT
 . LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing \the position of the robot.\
 . REPORT will announce the X,Y and orientation of the robot.\
 . A robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.\
-. The library should discard all invalid commands and parameters.\
+. The library should discard all invalid commands and parameters.
 
 Example Input and Output:\
 a)\
 PLACE 0,0,NORTH\
 MOVE\
 REPORT\
-Output: 0,1,NORTH\
+Output: 0,1,NORTH
 
 b)\
 PLACE 0,0,NORTH\
 LEFT\
 REPORT\
-Output: 0,0,WEST\
+Output: 0,0,WEST
 
 c)\
 PLACE 1,2,EAST\
@@ -42,7 +42,7 @@ MOVE\
 LEFT\
 MOVE\
 REPORT\
-Output: 3,3,NORTH\
+Output: 3,3,NORTH
 
 d)\
 PLACE 1,2,EAST\
@@ -52,34 +52,35 @@ MOVE\
 PLACE 3,1\
 MOVE\
 REPORT\
-Output: 3,2,NORTH\
+Output: 3,2,NORTH
 
-----------------------------------------------------------------------------------------------------------------------------------\
+----------------------------------------------------------------------------------------------------------------------------------
 
-SETUP\
+SETUP
 
-Because C# is a compiled language you will need to load this repo in Visual Studio and build it. This application was developed Visual Studion 2022 Community Edition using .Net Core 6.\
+Because C# is a compiled language you will need to load this repo in Visual Studio and build it. This application was developed Visual Studion 2022 Community Edition using .Net Core 6.
 
-Clone this repo:\
+Clone this repo:
 
-git clone https://github.com/afzaltk/ToyRobotSimulator.git\
+git clone https://github.com/afzaltk/ToyRobotSimulator.git
 
-Open the ToyRobotSimulator.sln and build it.\
+Open the ToyRobotSimulator.sln and build it.
 
-To Use:\
+To Use:
 
 Modify the commands.txt file found in the location ToyRobotSimulator/ToyRobotSimulator/.\
 Add all the required commands in this file.\
 Run an instance of the Project - ToyRobotSimulator \
-This will show a command window with the expected result.\
+This will show a command window with the expected result.
 
-------------------------------------------------------------------------\
+------------------------------------------------------------------------
 
-TESTS\
+TESTS
+
 To run the tests - run an instance of the project - ToyRobotTest\
-or open the Package Manager Console and run the command - dotnet test\
+or open the Package Manager Console and run the command - dotnet test
 
-The tests have been developed using xUnit\
+The tests have been developed using xUnit
 
 
 -----------------------------------------------------------------------------
