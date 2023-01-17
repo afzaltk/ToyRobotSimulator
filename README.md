@@ -69,9 +69,10 @@ Open the ToyRobotSimulator.sln and build it.
 To Use:
 
 Modify the commands.txt file found in the location ToyRobotSimulator/ToyRobotSimulator/.
-Add all the commands in this file.
+Add all the required commands in this file.
 Run an instance of the Project - ToyRobotSimulator 
 This will show a command window with the expected result.
+
 ------------------------------------------------------------------------
 
 TESTS
