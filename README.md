@@ -2,10 +2,10 @@ Toy Robot Simulator
 --------------------
 This is a console application that can read in commands of the following form:
 
-PLACE X,Y,DIRECTION
-MOVE
-LEFT
-RIGHT
+PLACE X,Y,DIRECTION\
+MOVE\
+LEFT\
+RIGHT\
 REPORT
 
 . The library allows for a simulation of a toy robot moving on a 6 x 6 square tabletop.
